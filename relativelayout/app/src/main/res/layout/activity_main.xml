@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="700dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/pertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:id="@+id/pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/PT_name"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pt"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/baseline_location_pin_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pt"
+            android:layout_toRightOf="@+id/gps"
+            android:text="@string/Tempat"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pertama"
+        android:layout_margin="25dp"
+        android:padding="5dp"
+        android:background="@drawable/notip">
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/informasi" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Terakhir" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Selanjutnya" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kedua"
+        android:layout_margin="25dp"
+        android:padding="5dp">
+
+        <Button
+            android:padding="18dp"
+            android:id="@+id/satu"
+            android:layout_width="170dp"
+            android:layout_height="164dp"
+            android:background="@drawable/button"
+            android:drawableTop="@drawable/baseline_manage_search_24"
+            android:elevation="15dp"
+            android:text="@string/Katalog"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:padding="18dp"
+            android:id="@+id/dua"
+            android:layout_width="170dp"
+            android:layout_height="164dp"
+            android:layout_alignTop="@+id/satu"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/satu"
+            android:background="@drawable/button"
+            android:drawableTop="@drawable/baseline_bookmark_added_24"
+            android:elevation="15dp"
+            android:text="@string/Tersimpan"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:id="@+id/tiga"
+            android:layout_width="170dp"
+            android:layout_height="164dp"
+            android:layout_below="@+id/satu"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/button"
+            android:drawableTop="@drawable/baseline_insert_chart_24"
+            android:elevation="15dp"
+            android:text="@string/Laporan"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <Button
+            android:padding="18dp"
+            android:id="@+id/empat"
+            android:layout_width="170dp"
+            android:layout_height="164dp"
+            android:layout_alignTop="@+id/tiga"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/tiga"
+            android:background="@drawable/button"
+            android:drawableTop="@drawable/baseline_settings_24"
+            android:elevation="15dp"
+            android:text="@string/Katalog"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp"/>
+    </RelativeLayout>
+</RelativeLayout>

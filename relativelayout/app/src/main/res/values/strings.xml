@@ -1,0 +1,12 @@
+<resources xmlns:color="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">relativelayout</string>
+    <string name="PT_name">PT. Jombs Skuyy</string>
+    <string name="Tempat">Kuripan Kidul</string>
+    <string name="informasi">informasi perubahan data katalog</string>
+    <string name="Terakhir">Pembaruan terakhir: <font color="#FF9462">01–10–2004 11:00:00</font></string>
+    <string name="Selanjutnya">Pembaruan selanjutnya: <font color="#FF9462">23–10–2004 11:00:00</font></string>
+    <string name="Katalog">Katalog Tender</string>
+    <string name="Tersimpan">Tender Tersimpan</string>
+    <string name="Laporan">Laporan Statistik</string>
+    <string name="Pengaturan">Pengaturan</string>
+</resources>
